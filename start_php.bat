@@ -1,0 +1,1 @@
+php artisan serve --host=rasporedi.com --port=8082
