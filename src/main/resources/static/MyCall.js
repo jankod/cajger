@@ -1,7 +1,0 @@
-class MyCall {
-
-
-    constructor() {
-
-    }
-}

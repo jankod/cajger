@@ -1,0 +1,15 @@
+// assets/css/global.scss
+
+// customize some Bootstrap variables
+$primary: darken(#428bca, 20%);
+
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Bootstrap
+@import '../../../../../node_modules/bootstrap/scss/bootstrap';
+
+@import "../../../../../node_modules/fullcalendar/dist/fullcalendar.min.css";
+@import "../../../../../node_modules/fullcalendar-scheduler/dist/scheduler.min.css";
+
+@import '../../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';

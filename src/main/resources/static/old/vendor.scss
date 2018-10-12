@@ -1,0 +1,14 @@
+.app {
+  background-color: aliceblue;
+}
+
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Bootstrap
+@import '../../../../../node_modules/bootstrap/scss/bootstrap';
+
+@import "../../../../../node_modules/fullcalendar/dist/fullcalendar.min.css";
+@import "../../../../../node_modules/fullcalendar-scheduler/dist/scheduler.min.css";
+
+//@import '~@fortawesome/fontawesome-free/css/all.min.css";
