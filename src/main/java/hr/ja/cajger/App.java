@@ -5,9 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.orm.jpa.JpaVendorAdapter;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-@SpringBootApplication
-@Configuration
+@SpringBootApplication()
+//@Configuration
 public class App {
 
     public static void main(String[] args) {
@@ -16,7 +20,19 @@ public class App {
 
 
     @Bean
+    public JpaVendorAdapter jpaVendorAdapter() {
+        HibernateJpaVendorAdapter bean = new HibernateJpaVendorAdapter();
+        bean.setDatabase(Database.MYSQL);
+        bean.setGenerateDdl(true);
+        bean.setShowSql(true);
+        return bean;
+    }
+
+
+    @Bean
     public LayoutDialect layoutDialect() {
         return new LayoutDialect();
     }
+
+
 }

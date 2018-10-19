@@ -1,4 +1,4 @@
-package hr.ja.cajger;
+package hr.ja.cajger.conf;
 
 
 import org.springframework.context.annotation.ComponentScan;
