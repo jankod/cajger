@@ -1,2 +1,2 @@
- @rem -- yarn encore dev --watch
- npm run watch
+yarn encore dev --watch
+ @rem npm run watch

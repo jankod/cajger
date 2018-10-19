@@ -2,9 +2,10 @@ require('fullcalendar');
 require('fullcalendar-scheduler');
 require('fullcalendar/dist/locale/hr')
 require('moment');
-//quire('jquery');
+require('index.scss');
 
 
+const $ = require('jquery');
 
 let conf = {
     defaultView: 'timelineDay',

@@ -1,12 +1,11 @@
 var Encore = require('@symfony/webpack-encore');
 
-let dirSrc =              "./src/main/resources/static/src";
-
+let dirSrc = "./src/main/resources/static/src";
 
 
 Encore
 // directory where compiled assets will be stored
-    .setOutputPath(dirSrc+'/../dist/')
+    .setOutputPath(dirSrc + '/../dist/')
     // public path used by the web server to access the output path
     .setPublicPath('/')
     // only needed for CDN's or sub-directory deploy
@@ -21,7 +20,7 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
-    .addEntry('vendor', dirSrc + '/vendor.js')
+    .addEntry('index', dirSrc + '/index.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
