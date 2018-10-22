@@ -1,11 +1,17 @@
+// ### FullCalnedar
+require('moment');
 require('fullcalendar');
 require('fullcalendar-scheduler');
-require('fullcalendar/dist/locale/hr')
-require('moment');
-require('index.scss');
+require('fullcalendar/dist/locale/hr');
+
+require('./fullcalendar.scss');
+// ###
 
 
-const $ = require('jquery');
+
+require('./index.scss');
+
+
 
 let conf = {
     defaultView: 'timelineDay',

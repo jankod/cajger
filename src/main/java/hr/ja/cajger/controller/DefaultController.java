@@ -13,7 +13,7 @@ public class DefaultController {
                         Model model) {
 
         model.addAttribute("name", name + " evo ga još 2 4 89 sdsad");
-        return "index2";
+        return "index";
     }
 
 }

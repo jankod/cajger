@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+<body>
+
+<section layout:fragment="content">
+
+    <h1>New Person</h1>
+    <form action="#" th:action="@{/person}" th:object="${person}" method="post">
+        <p>Name: <input type="text" th:field="*{name}"/></p>
+        <p>Age: <input type="number" th:field="*{age}"/></p>
+        <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+    </form>
+    <p>
+        <a th:href="@{/person}">Result 2</a>
+    </p>
+
+
+    Local addr: <span th:text=" ${#request.getLocalAddr()}"></span>
+    <div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -21,8 +21,10 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('index', dirSrc + '/index.js')
-    //.addEntry('page1', './assets/js/page1.js')
-    //.addEntry('page2', './assets/js/page2.js')
+    //.addEntry('fullcalendar', dirSrc+'/fullcalendar.js')
+    //.addEntry('bootstrap_jquery', dirSrc+'/bootstrap_jquery.js')
+    .createSharedEntry("bootstrap_jquery", dirSrc+'/bootstrap_jquery.js')
+
 
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())

@@ -2,26 +2,40 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout}">
 <head>
+    <title>Start</title>
+
+    <link href="dist/index.css" rel="stylesheet">
+</head>
 <body>
-
 <section layout:fragment="content">
+    <div class="wrapper">
 
-    <h1>New Person</h1>
-    <form action="#" th:action="@{/person}" th:object="${person}" method="post">
-        <p>Name: <input type="text" th:field="*{name}"/></p>
-        <p>Age: <input type="number" th:field="*{age}"/></p>
-        <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
-    </form>
-    <p>
-        <a th:href="@{/person}">Result 2</a>
-    </p>
+        <div th:insert="~{sidebar :: sidebar}"/>
 
+        <div class="container-fluid" id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-    Local addr: <span th:text=" ${#request.getLocalAddr()}"></span>
-    <div>
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <a class="btn" href="#" id="demoClick">Tolge</a>
 
+                </div>
+            </nav>
+
+            <p th:text="'Bokic ' + ${name} + '!'"/>
+
+            <div id="calendar">
+
+            </div>
+        </div>
     </div>
 </section>
+<span layout:fragment="js-before-body">
+    <script type="text/javascript" src="dist/index.js"></script>
+</span>
 
 </body>
 </html>
